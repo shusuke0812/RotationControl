@@ -9,9 +9,9 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    @IBOutlet weak var vcLabel: UILabel!
+    @IBOutlet weak var vcView: UIView!
+    @IBOutlet weak var nextButton: UIButton!
     
     static func instantiate() -> FirstViewController {
         let s = UIStoryboard(name: "FirstViewController", bundle: nil)
@@ -19,5 +19,28 @@ class FirstViewController: UIViewController {
             fatalError("can not setup first viewcontroller")
         }
         return vc
+    }
+    
+    // MARK: - Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        configUI()
+    }
+    
+    // MARK: - Action
+    @IBAction func didTappedNextButton(_ sender: Any) {
+        transitionSecondPage()
+    }
+}
+
+// MARK: - Private
+extension FirstViewController {
+    private func configUI() {
+        vcLabel.text = "First ViewController"
+        vcView.backgroundColor = .systemBlue
+        nextButton.setTitle("次に進む", for: .normal)
+    }
+    private func transitionSecondPage() {
+        
     }
 }
