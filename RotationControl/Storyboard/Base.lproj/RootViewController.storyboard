@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -29,19 +30,30 @@
                                     <constraint firstAttribute="height" constant="130" id="835-uT-P9N"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNI-re-pra">
+                                <rect key="frame" x="15" y="464" width="384" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="didTappedNextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CZK-gh-Ya1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="rNI-re-pra" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="A2N-BQ-J5f"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3aP-oT-xje" secondAttribute="trailing" constant="15" id="AeB-yY-5Tg"/>
                             <constraint firstItem="3aP-oT-xje" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="WGF-Ts-bpK"/>
                             <constraint firstItem="Q8v-7o-gVr" firstAttribute="top" secondItem="3aP-oT-xje" secondAttribute="bottom" constant="60" id="dOP-L5-HmV"/>
                             <constraint firstItem="3aP-oT-xje" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="170" id="gpc-b2-xks"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rNI-re-pra" secondAttribute="trailing" constant="15" id="hqA-oi-cUh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q8v-7o-gVr" secondAttribute="trailing" constant="15" id="hrz-EC-Usi"/>
+                            <constraint firstItem="rNI-re-pra" firstAttribute="top" secondItem="Q8v-7o-gVr" secondAttribute="bottom" constant="60" id="iGG-f3-A61"/>
                             <constraint firstItem="Q8v-7o-gVr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="uCb-Uf-JrO"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="nextButton" destination="rNI-re-pra" id="FJ3-BM-dJz"/>
                         <outlet property="vcLabel" destination="3aP-oT-xje" id="F8L-y2-biZ"/>
                         <outlet property="vcView" destination="Q8v-7o-gVr" id="Ghb-1u-br7"/>
                     </connections>

@@ -11,10 +11,17 @@ class RootViewController: UIViewController {
     
     @IBOutlet private weak var vcLabel: UILabel!
     @IBOutlet weak var vcView: UIView!
+    @IBOutlet weak var nextButton: UIButton!
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
+    }
+    
+    // MARK: - Action
+    @IBAction func didTappedNextButton(_ sender: Any) {
+        transitionFirstPage()
     }
 }
 
@@ -23,5 +30,9 @@ extension RootViewController {
     private func configUI() {
         vcLabel.text = "Root ViewController"
         vcView.backgroundColor = .systemRed
+        nextButton.setTitle("次に進む", for: .normal)
+    }
+    private func transitionFirstPage() {
+        
     }
 }
