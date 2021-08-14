@@ -19,7 +19,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yig-S0-9pQ">
                                 <rect key="frame" x="15" y="214" width="384" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -54,8 +54,8 @@
                     </view>
                     <connections>
                         <outlet property="nextButton" destination="rdr-1Y-056" id="cBn-hy-Mq6"/>
-                        <outlet property="vcLabel" destination="Yig-S0-9pQ" id="yHe-4q-Msa"/>
-                        <outlet property="vcView" destination="UqP-no-DUA" id="H8t-do-0WX"/>
+                        <outlet property="rootTypeLabel" destination="Yig-S0-9pQ" id="yHe-4q-Msa"/>
+                        <outlet property="rotateDescriptionView" destination="UqP-no-DUA" id="H8t-do-0WX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

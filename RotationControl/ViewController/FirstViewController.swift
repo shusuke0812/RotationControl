@@ -9,8 +9,8 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    @IBOutlet private weak var vcLabel: UILabel!
-    @IBOutlet private weak var vcView: RotateDescriptionView!
+    @IBOutlet private weak var rootTypeLabel: UILabel!
+    @IBOutlet private weak var rotateDescriptionView: RotateDescriptionView!
     @IBOutlet private weak var nextButton: UIButton!
     
     // MARK: - Lifecycle
@@ -28,12 +28,16 @@ class FirstViewController: UIViewController {
 // MARK: - Private
 extension FirstViewController {
     private func configUI() {
-        vcLabel.text = self.className
-        vcView.backgroundColor = .systemBlue
-        vcView.setDescription(descriptionText: RotateDescriptionHelper.setDescription(iphoneRotation: false, ipadRotation: true))
-        nextButton.setTitle(Common.ButtonTitle.next, for: .normal)
+        rootTypeLabel.text = "Root is Navigation"
+        rootTypeLabel.font = UIFont.systemFont(ofSize: Common.ButtonSize.standard)
         
-        navigationItem.title = "Root is Navigation"
+        rotateDescriptionView.backgroundColor = .systemBlue
+        rotateDescriptionView.setDescription(descriptionText: RotateDescriptionHelper.setDescription(iphoneRotation: false, ipadRotation: true))
+        
+        nextButton.setTitle(Common.ButtonTitle.next, for: .normal)
+        nextButton.titleLabel?.font = UIFont.systemFont(ofSize: Common.ButtonSize.standard)
+        
+        navigationItem.title = self.className
     }
     private func transitionSecondPage() {
         

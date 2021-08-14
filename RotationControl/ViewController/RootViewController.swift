@@ -9,8 +9,8 @@ import UIKit
 
 class RootViewController: UIViewController {
     
-    @IBOutlet private weak var vcLabel: UILabel!
-    @IBOutlet private weak var vcView: RotateDescriptionView!
+    @IBOutlet private weak var rootTypeLabel: UILabel!
+    @IBOutlet private weak var rotateDescriptionView: RotateDescriptionView!
     @IBOutlet private weak var nextButton: UIButton!
     
     // MARK: - Lifecycle
@@ -28,12 +28,16 @@ class RootViewController: UIViewController {
 // MARK: - Private
 extension RootViewController {
     private func configUI() {
-        vcLabel.text = self.className
-        vcView.backgroundColor = .systemRed
-        vcView.setDescription(descriptionText: RotateDescriptionHelper.setDescription(iphoneRotation: false, ipadRotation: true))
-        nextButton.setTitle(Common.ButtonTitle.next, for: .normal)
+        rootTypeLabel.text = "Root is Navigation"
+        rootTypeLabel.font = UIFont.systemFont(ofSize: Common.ButtonSize.standard)
         
-        navigationItem.title = "Root is Navigation"
+        rotateDescriptionView.backgroundColor = .systemRed
+        rotateDescriptionView.setDescription(descriptionText: RotateDescriptionHelper.setDescription(iphoneRotation: false, ipadRotation: true))
+        
+        nextButton.setTitle(Common.ButtonTitle.next, for: .normal)
+        nextButton.titleLabel?.font = UIFont.systemFont(ofSize: Common.ButtonSize.standard)
+        
+        navigationItem.title = self.className
     }
     private func transitionFirstPage() {
         let vc = Storyboard.FirstViewController.instantiate(FirstViewController.self)
