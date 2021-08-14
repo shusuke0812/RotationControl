@@ -7,6 +7,11 @@
 
 import UIKit
 
+/**
+ * トップ画面
+ * - iPhone : 縦表示のみ
+ * - iPad : 縦表示・横表示
+ */
 class RootViewController: UIViewController {
     
     @IBOutlet private weak var rootTypeLabel: UILabel!
