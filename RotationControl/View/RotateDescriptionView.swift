@@ -22,6 +22,7 @@ class RotateDescriptionView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        self.backgroundColor = .systemGray
         self.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(descriptionLabel)
         
@@ -40,9 +41,6 @@ class RotateDescriptionView: UIView {
 
 // MARK: - Config
 extension RotateDescriptionView {
-    func setBackgroundColor(color: UIColor = .systemGray) {
-        self.backgroundColor = color
-    }
     func setDescription(descriptionText: String) {
         self.descriptionLabel.text = descriptionText
     }
