@@ -31,8 +31,11 @@ extension RootViewController {
         vcLabel.text = "Root ViewController"
         vcView.backgroundColor = .systemRed
         nextButton.setTitle("次に進む", for: .normal)
+        
+        navigationItem.title = "Root is Navigation"
     }
     private func transitionFirstPage() {
-        
+        let vc = FirstViewController.instantiate()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

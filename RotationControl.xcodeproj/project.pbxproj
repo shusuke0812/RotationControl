@@ -13,6 +13,8 @@
 		9CC6BE7526C6BA7E00C79936 /* RootViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC6BE7326C6BA7E00C79936 /* RootViewController.storyboard */; };
 		9CC6BE7726C6BA8800C79936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CC6BE7626C6BA8800C79936 /* Assets.xcassets */; };
 		9CC6BE7A26C6BA8800C79936 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC6BE7826C6BA8800C79936 /* LaunchScreen.storyboard */; };
+		9CFC106226C7B3D700F252BA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC106126C7B3D700F252BA /* FirstViewController.swift */; };
+		9CFC106426C7B44300F252BA /* FirstViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFC106326C7B44300F252BA /* FirstViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9CC6BE7626C6BA8800C79936 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CC6BE7926C6BA8800C79936 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CC6BE7B26C6BA8800C79936 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CFC106126C7B3D700F252BA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		9CFC106326C7B44300F252BA /* FirstViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				9CC6BE7126C6BA7E00C79936 /* RootViewController.swift */,
+				9CFC106126C7B3D700F252BA /* FirstViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -49,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				9CC6BE7326C6BA7E00C79936 /* RootViewController.storyboard */,
+				9CFC106326C7B44300F252BA /* FirstViewController.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -140,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CFC106426C7B44300F252BA /* FirstViewController.storyboard in Resources */,
 				9CC6BE7A26C6BA8800C79936 /* LaunchScreen.storyboard in Resources */,
 				9CC6BE7726C6BA8800C79936 /* Assets.xcassets in Resources */,
 				9CC6BE7526C6BA7E00C79936 /* RootViewController.storyboard in Resources */,
@@ -156,6 +163,7 @@
 				9CC6BE7226C6BA7E00C79936 /* RootViewController.swift in Sources */,
 				9CC6BE6E26C6BA7E00C79936 /* AppDelegate.swift in Sources */,
 				9CC6BE7026C6BA7E00C79936 /* SceneDelegate.swift in Sources */,
+				9CFC106226C7B3D700F252BA /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
