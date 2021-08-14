@@ -16,6 +16,7 @@
 		9CFC106226C7B3D700F252BA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC106126C7B3D700F252BA /* FirstViewController.swift */; };
 		9CFC106426C7B44300F252BA /* FirstViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFC106326C7B44300F252BA /* FirstViewController.storyboard */; };
 		9CFC106926C7F98000F252BA /* RotateDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC106826C7F98000F252BA /* RotateDescriptionView.swift */; };
+		9CFC106C26C80E8800F252BA /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC106B26C80E8800F252BA /* Storyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9CFC106126C7B3D700F252BA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		9CFC106326C7B44300F252BA /* FirstViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstViewController.storyboard; sourceTree = "<group>"; };
 		9CFC106826C7F98000F252BA /* RotateDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateDescriptionView.swift; sourceTree = "<group>"; };
+		9CFC106B26C80E8800F252BA /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		9CC6BE6C26C6BA7E00C79936 /* RotationControl */ = {
 			isa = PBXGroup;
 			children = (
+				9CFC106A26C80E7700F252BA /* Utility */,
 				9CFC106526C7F83500F252BA /* View */,
 				9C9FDAF326C7A4580003AE4A /* Storyboard */,
 				9C9FDAF226C7A44F0003AE4A /* ViewController */,
@@ -98,6 +101,14 @@
 				9CFC106826C7F98000F252BA /* RotateDescriptionView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9CFC106A26C80E7700F252BA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9CFC106B26C80E8800F252BA /* Storyboard.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +186,7 @@
 				9CC6BE6E26C6BA7E00C79936 /* AppDelegate.swift in Sources */,
 				9CC6BE7026C6BA7E00C79936 /* SceneDelegate.swift in Sources */,
 				9CFC106926C7F98000F252BA /* RotateDescriptionView.swift in Sources */,
+				9CFC106C26C80E8800F252BA /* Storyboard.swift in Sources */,
 				9CFC106226C7B3D700F252BA /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

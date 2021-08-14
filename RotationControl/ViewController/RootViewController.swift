@@ -36,7 +36,7 @@ extension RootViewController {
         navigationItem.title = "Root is Navigation"
     }
     private func transitionFirstPage() {
-        let vc = FirstViewController.instantiate()
+        let vc = Storyboard.FirstViewController.instantiate(FirstViewController.self)
         navigationController?.pushViewController(vc, animated: true)
     }
 }

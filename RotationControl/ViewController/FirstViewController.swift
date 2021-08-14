@@ -13,14 +13,6 @@ class FirstViewController: UIViewController {
     @IBOutlet private weak var vcView: RotateDescriptionView!
     @IBOutlet private weak var nextButton: UIButton!
     
-    static func instantiate() -> FirstViewController {
-        let s = UIStoryboard(name: "FirstViewController", bundle: nil)
-        guard let vc = s.instantiateInitialViewController() as? FirstViewController else {
-            fatalError("can not setup first viewcontroller")
-        }
-        return vc
-    }
-    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
