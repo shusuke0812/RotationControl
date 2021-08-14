@@ -9,9 +9,9 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    @IBOutlet weak var vcLabel: UILabel!
-    @IBOutlet weak var vcView: UIView!
-    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet private weak var vcLabel: UILabel!
+    @IBOutlet private weak var vcView: RotateDescriptionView!
+    @IBOutlet private weak var nextButton: UIButton!
     
     static func instantiate() -> FirstViewController {
         let s = UIStoryboard(name: "FirstViewController", bundle: nil)
@@ -38,6 +38,7 @@ extension FirstViewController {
     private func configUI() {
         vcLabel.text = "First ViewController"
         vcView.backgroundColor = .systemBlue
+        vcView.setDescription(descriptionText: "iPad：画面回転あり、iPhone：画面回転なし")
         nextButton.setTitle("次に進む", for: .normal)
     }
     private func transitionSecondPage() {

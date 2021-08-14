@@ -23,7 +23,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UqP-no-DUA">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UqP-no-DUA" customClass="RotateDescriptionView" customModule="RotationControl" customModuleProvider="target">
                                 <rect key="frame" x="15" y="274" width="384" height="130"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -55,7 +55,7 @@
                     <connections>
                         <outlet property="nextButton" destination="rdr-1Y-056" id="cBn-hy-Mq6"/>
                         <outlet property="vcLabel" destination="Yig-S0-9pQ" id="yHe-4q-Msa"/>
-                        <outlet property="vcView" destination="UqP-no-DUA" id="dYV-EH-p9x"/>
+                        <outlet property="vcView" destination="UqP-no-DUA" id="H8t-do-0WX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
