@@ -28,7 +28,7 @@ class RootViewController: UIViewController {
 // MARK: - Private
 extension RootViewController {
     private func configUI() {
-        vcLabel.text = "Root ViewController"
+        vcLabel.text = self.className
         vcView.backgroundColor = .systemRed
         vcView.setDescription(descriptionText: RotateDescriptionHelper.setDescription(iphoneRotation: false, ipadRotation: true))
         nextButton.setTitle("次に進む", for: .normal)

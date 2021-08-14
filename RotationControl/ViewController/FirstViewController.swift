@@ -28,7 +28,7 @@ class FirstViewController: UIViewController {
 // MARK: - Private
 extension FirstViewController {
     private func configUI() {
-        vcLabel.text = "First ViewController"
+        vcLabel.text = self.className
         vcView.backgroundColor = .systemBlue
         vcView.setDescription(descriptionText: RotateDescriptionHelper.setDescription(iphoneRotation: false, ipadRotation: true))
         nextButton.setTitle("次に進む", for: .normal)
