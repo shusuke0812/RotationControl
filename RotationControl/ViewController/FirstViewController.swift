@@ -31,7 +31,8 @@ extension FirstViewController {
         vcLabel.text = self.className
         vcView.backgroundColor = .systemBlue
         vcView.setDescription(descriptionText: RotateDescriptionHelper.setDescription(iphoneRotation: false, ipadRotation: true))
-        nextButton.setTitle("次に進む", for: .normal)
+        nextButton.setTitle(Common.ButtonTitle.next, for: .normal)
+        
         navigationItem.title = "Root is Navigation"
     }
     private func transitionSecondPage() {

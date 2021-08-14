@@ -19,6 +19,7 @@
 		9CFC106C26C80E8800F252BA /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC106B26C80E8800F252BA /* Storyboard.swift */; };
 		9CFC106F26C8139000F252BA /* RotateDescriptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC106E26C8139000F252BA /* RotateDescriptionHelper.swift */; };
 		9CFC107226C819CD00F252BA /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC107126C819CD00F252BA /* UIViewController+Extension.swift */; };
+		9CFC107526C81C7800F252BA /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC107426C81C7800F252BA /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		9CFC106B26C80E8800F252BA /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		9CFC106E26C8139000F252BA /* RotateDescriptionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateDescriptionHelper.swift; sourceTree = "<group>"; };
 		9CFC107126C819CD00F252BA /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		9CFC107426C81C7800F252BA /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		9CC6BE6C26C6BA7E00C79936 /* RotationControl */ = {
 			isa = PBXGroup;
 			children = (
+				9CFC107326C81C6800F252BA /* Static */,
 				9CFC106A26C80E7700F252BA /* Utility */,
 				9CFC106526C7F83500F252BA /* View */,
 				9C9FDAF326C7A4580003AE4A /* Storyboard */,
@@ -131,6 +134,14 @@
 				9CFC107126C819CD00F252BA /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		9CFC107326C81C6800F252BA /* Static */ = {
+			isa = PBXGroup;
+			children = (
+				9CFC107426C81C7800F252BA /* Common.swift */,
+			);
+			path = Static;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +219,7 @@
 				9CC6BE7226C6BA7E00C79936 /* RootViewController.swift in Sources */,
 				9CC6BE6E26C6BA7E00C79936 /* AppDelegate.swift in Sources */,
 				9CFC106F26C8139000F252BA /* RotateDescriptionHelper.swift in Sources */,
+				9CFC107526C81C7800F252BA /* Common.swift in Sources */,
 				9CC6BE7026C6BA7E00C79936 /* SceneDelegate.swift in Sources */,
 				9CFC106926C7F98000F252BA /* RotateDescriptionView.swift in Sources */,
 				9CFC106C26C80E8800F252BA /* Storyboard.swift in Sources */,
