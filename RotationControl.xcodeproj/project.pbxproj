@@ -17,6 +17,7 @@
 		9CFC106426C7B44300F252BA /* FirstViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CFC106326C7B44300F252BA /* FirstViewController.storyboard */; };
 		9CFC106926C7F98000F252BA /* RotateDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC106826C7F98000F252BA /* RotateDescriptionView.swift */; };
 		9CFC106C26C80E8800F252BA /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC106B26C80E8800F252BA /* Storyboard.swift */; };
+		9CFC106F26C8139000F252BA /* RotateDescriptionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFC106E26C8139000F252BA /* RotateDescriptionHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		9CFC106326C7B44300F252BA /* FirstViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstViewController.storyboard; sourceTree = "<group>"; };
 		9CFC106826C7F98000F252BA /* RotateDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateDescriptionView.swift; sourceTree = "<group>"; };
 		9CFC106B26C80E8800F252BA /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		9CFC106E26C8139000F252BA /* RotateDescriptionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateDescriptionHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +108,18 @@
 		9CFC106A26C80E7700F252BA /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				9CFC106D26C8137200F252BA /* Helper */,
 				9CFC106B26C80E8800F252BA /* Storyboard.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		9CFC106D26C8137200F252BA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				9CFC106E26C8139000F252BA /* RotateDescriptionHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 			files = (
 				9CC6BE7226C6BA7E00C79936 /* RootViewController.swift in Sources */,
 				9CC6BE6E26C6BA7E00C79936 /* AppDelegate.swift in Sources */,
+				9CFC106F26C8139000F252BA /* RotateDescriptionHelper.swift in Sources */,
 				9CC6BE7026C6BA7E00C79936 /* SceneDelegate.swift in Sources */,
 				9CFC106926C7F98000F252BA /* RotateDescriptionView.swift in Sources */,
 				9CFC106C26C80E8800F252BA /* Storyboard.swift in Sources */,

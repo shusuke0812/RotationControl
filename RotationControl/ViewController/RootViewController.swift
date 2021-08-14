@@ -30,7 +30,7 @@ extension RootViewController {
     private func configUI() {
         vcLabel.text = "Root ViewController"
         vcView.backgroundColor = .systemRed
-        vcView.setDescription(descriptionText: "iPad：画面回転あり、iPhone：画面回転なし")
+        vcView.setDescription(descriptionText: RotateDescriptionHelper.setDescription(iphoneRotation: false, ipadRotation: true))
         nextButton.setTitle("次に進む", for: .normal)
         
         navigationItem.title = "Root is Navigation"

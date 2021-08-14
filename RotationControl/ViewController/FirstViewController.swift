@@ -30,7 +30,7 @@ extension FirstViewController {
     private func configUI() {
         vcLabel.text = "First ViewController"
         vcView.backgroundColor = .systemBlue
-        vcView.setDescription(descriptionText: "iPad：画面回転あり、iPhone：画面回転なし")
+        vcView.setDescription(descriptionText: RotateDescriptionHelper.setDescription(iphoneRotation: false, ipadRotation: true))
         nextButton.setTitle("次に進む", for: .normal)
         navigationItem.title = "Root is Navigation"
     }
