@@ -40,6 +40,7 @@ extension FirstViewController {
         vcView.backgroundColor = .systemBlue
         vcView.setDescription(descriptionText: "iPad：画面回転あり、iPhone：画面回転なし")
         nextButton.setTitle("次に進む", for: .normal)
+        navigationItem.title = "Root is Navigation"
     }
     private func transitionSecondPage() {
         
