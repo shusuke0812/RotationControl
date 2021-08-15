@@ -24,6 +24,21 @@ class FirstViewController: UIViewController {
         configUI()
     }
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .allButUpsideDown
+    }
+    
+    // TODO: 下記は暫定、横回転させたあとに前画面へ戻ると強制的に縦画面になるようにする
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            if UIDevice.current.orientation.isLandscape {
+                navigationItem.setHidesBackButton(true, animated: false)
+            } else {
+                navigationItem.setHidesBackButton(false, animated: false)
+            }
+        }
+    }
+    
     // MARK: - Action
     @IBAction func didTappedNextButton(_ sender: Any) {
         transitionSecondPage()

@@ -12,7 +12,7 @@ import UIKit
  * - iPhone : 縦表示のみ
  * - iPad : 縦表示・横表示
  */
-class RootViewController: UIViewController {
+class TopViewController: UIViewController {
     
     @IBOutlet private weak var rootTypeLabel: UILabel!
     @IBOutlet private weak var rotateDescriptionView: RotateDescriptionView!
@@ -24,14 +24,18 @@ class RootViewController: UIViewController {
         configUI()
     }
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIDevice.current.userInterfaceIdiom == .phone ? .portrait : .allButUpsideDown
+    }
+    
     // MARK: - Action
-    @IBAction func didTappedNextButton(_ sender: Any) {
+    @IBAction private func didTappedNextButton(_ sender: Any) {
         transitionFirstPage()
     }
 }
 
 // MARK: - Private
-extension RootViewController {
+extension TopViewController {
     private func configUI() {
         rootTypeLabel.text = "Root is Navigation"
         rootTypeLabel.font = UIFont.systemFont(ofSize: Common.ButtonSize.standard)
