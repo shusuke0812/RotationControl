@@ -52,7 +52,7 @@ extension FirstViewController {
         rootTypeLabel.font = UIFont.systemFont(ofSize: Common.ButtonSize.standard)
         
         rotateDescriptionView.backgroundColor = .systemBlue
-        rotateDescriptionView.setDescription(descriptionText: RotateDescriptionHelper.setDescription(iphoneRotation: false, ipadRotation: true))
+        rotateDescriptionView.setDescription(descriptionText: RotateDescriptionHelper.setDescription(iphoneRotation: true, ipadRotation: true))
         
         nextButton.setTitle(Common.ButtonTitle.next, for: .normal)
         nextButton.titleLabel?.font = UIFont.systemFont(ofSize: Common.ButtonSize.standard)
@@ -60,6 +60,7 @@ extension FirstViewController {
         navigationItem.title = self.className
     }
     private func transitionSecondPage() {
-        
+        let vc = Storyboard.RootTabBarController.instantiate(RootTabBarController.self, inBundle: nil)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
