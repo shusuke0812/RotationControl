@@ -7,6 +7,9 @@
 
 import UIKit
 
+/**
+ * 回転制御元のRoot ViewController `TabBar `
+ */
 class RootTabBarController: UITabBarController {
 
     override func viewDidLoad() {
