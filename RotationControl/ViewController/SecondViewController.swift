@@ -22,6 +22,10 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         configUI()
     }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIDevice.current.userInterfaceIdiom == .phone ? .portrait : .allButUpsideDown
+    }
 }
 
 // MARK: - Private
