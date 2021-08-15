@@ -9,8 +9,12 @@ import UIKit
 
 /// Storyboard名を管理する
 enum Storyboard: String {
-    case RootViewController
+    case RootNavigationController
+    case TopViewController
     case FirstViewController
+    case RootTabBarController
+    case SecondViewController
+    case ThirdViewController
     
     /// StoryboardからViewControllerインスタンス化する
     func instantiate<VC: UIViewController>(_: VC.Type, inBundle bundle: Bundle? = nil) -> VC {
