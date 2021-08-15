@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		9CC41A3D26C9063700E7F479 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC41A3C26C9063700E7F479 /* RootNavigationController.swift */; };
 		9CC41A3F26C907B300E7F479 /* RootNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC41A3E26C907B300E7F479 /* RootNavigationController.storyboard */; };
+		9CC41A4126C932B700E7F479 /* RootTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC41A4026C932B700E7F479 /* RootTabBarController.storyboard */; };
+		9CC41A4326C932F400E7F479 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC41A4226C932F400E7F479 /* RootTabBarController.swift */; };
+		9CC41A4526C9332C00E7F479 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC41A4426C9332C00E7F479 /* SecondViewController.swift */; };
+		9CC41A4726C9337700E7F479 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC41A4626C9337700E7F479 /* ThirdViewController.swift */; };
+		9CC41A4926C9339100E7F479 /* SecondViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC41A4826C9339100E7F479 /* SecondViewController.storyboard */; };
+		9CC41A4B26C933AE00E7F479 /* ThirdViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC41A4A26C933AE00E7F479 /* ThirdViewController.storyboard */; };
 		9CC6BE6E26C6BA7E00C79936 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6BE6D26C6BA7E00C79936 /* AppDelegate.swift */; };
 		9CC6BE7026C6BA7E00C79936 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6BE6F26C6BA7E00C79936 /* SceneDelegate.swift */; };
 		9CC6BE7226C6BA7E00C79936 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC6BE7126C6BA7E00C79936 /* TopViewController.swift */; };
@@ -27,6 +33,12 @@
 /* Begin PBXFileReference section */
 		9CC41A3C26C9063700E7F479 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
 		9CC41A3E26C907B300E7F479 /* RootNavigationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootNavigationController.storyboard; sourceTree = "<group>"; };
+		9CC41A4026C932B700E7F479 /* RootTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootTabBarController.storyboard; sourceTree = "<group>"; };
+		9CC41A4226C932F400E7F479 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		9CC41A4426C9332C00E7F479 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		9CC41A4626C9337700E7F479 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		9CC41A4826C9339100E7F479 /* SecondViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondViewController.storyboard; sourceTree = "<group>"; };
+		9CC41A4A26C933AE00E7F479 /* ThirdViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThirdViewController.storyboard; sourceTree = "<group>"; };
 		9CC6BE6A26C6BA7E00C79936 /* RotationControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RotationControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC6BE6D26C6BA7E00C79936 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CC6BE6F26C6BA7E00C79936 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +73,9 @@
 				9CC41A3C26C9063700E7F479 /* RootNavigationController.swift */,
 				9CC6BE7126C6BA7E00C79936 /* TopViewController.swift */,
 				9CFC106126C7B3D700F252BA /* FirstViewController.swift */,
+				9CC41A4226C932F400E7F479 /* RootTabBarController.swift */,
+				9CC41A4426C9332C00E7F479 /* SecondViewController.swift */,
+				9CC41A4626C9337700E7F479 /* ThirdViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -71,6 +86,9 @@
 				9CC41A3E26C907B300E7F479 /* RootNavigationController.storyboard */,
 				9CC6BE7326C6BA7E00C79936 /* TopViewController.storyboard */,
 				9CFC106326C7B44300F252BA /* FirstViewController.storyboard */,
+				9CC41A4026C932B700E7F479 /* RootTabBarController.storyboard */,
+				9CC41A4826C9339100E7F479 /* SecondViewController.storyboard */,
+				9CC41A4A26C933AE00E7F479 /* ThirdViewController.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -209,9 +227,12 @@
 			files = (
 				9CFC106426C7B44300F252BA /* FirstViewController.storyboard in Resources */,
 				9CC41A3F26C907B300E7F479 /* RootNavigationController.storyboard in Resources */,
+				9CC41A4926C9339100E7F479 /* SecondViewController.storyboard in Resources */,
+				9CC41A4126C932B700E7F479 /* RootTabBarController.storyboard in Resources */,
 				9CC6BE7A26C6BA8800C79936 /* LaunchScreen.storyboard in Resources */,
 				9CC6BE7726C6BA8800C79936 /* Assets.xcassets in Resources */,
 				9CC6BE7526C6BA7E00C79936 /* TopViewController.storyboard in Resources */,
+				9CC41A4B26C933AE00E7F479 /* ThirdViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CC41A4526C9332C00E7F479 /* SecondViewController.swift in Sources */,
 				9CFC107226C819CD00F252BA /* UIViewController+Extension.swift in Sources */,
 				9CC6BE7226C6BA7E00C79936 /* TopViewController.swift in Sources */,
 				9CC6BE6E26C6BA7E00C79936 /* AppDelegate.swift in Sources */,
@@ -231,7 +253,9 @@
 				9CC6BE7026C6BA7E00C79936 /* SceneDelegate.swift in Sources */,
 				9CFC106926C7F98000F252BA /* RotateDescriptionView.swift in Sources */,
 				9CFC106C26C80E8800F252BA /* Storyboard.swift in Sources */,
+				9CC41A4326C932F400E7F479 /* RootTabBarController.swift in Sources */,
 				9CFC106226C7B3D700F252BA /* FirstViewController.swift in Sources */,
+				9CC41A4726C9337700E7F479 /* ThirdViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
