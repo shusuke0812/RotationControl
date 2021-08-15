@@ -22,6 +22,21 @@ class ThirdViewController: UIViewController {
         super.viewDidLoad()
         configUI()
     }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .allButUpsideDown
+    }
+    
+    // TODO: 下記は暫定、横回転させたあとに 前画面へ戻る or Secondタブをタップする と強制的に縦画面になるようにする
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            if UIDevice.current.orientation.isLandscape {
+                self.parent?.navigationItem.setHidesBackButton(true, animated: false)
+            } else {
+                self.parent?.navigationItem.setHidesBackButton(false, animated: false)
+            }
+        }
+    }
 }
 
 // MARK: - Private
@@ -33,6 +48,6 @@ extension ThirdViewController {
         rotateDescriptionView.backgroundColor = .systemPink
         rotateDescriptionView.setDescription(descriptionText: RotateDescriptionHelper.setDescription(iphoneRotation: true, ipadRotation: true))
         
-        navigationItem.title = self.className
+        self.parent?.navigationItem.title = self.className
     }
 }

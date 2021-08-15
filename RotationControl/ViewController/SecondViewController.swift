@@ -37,6 +37,6 @@ extension SecondViewController {
         rotateDescriptionView.backgroundColor = .systemGreen
         rotateDescriptionView.setDescription(descriptionText: RotateDescriptionHelper.setDescription(iphoneRotation: false, ipadRotation: true))
         
-        navigationItem.title = self.className
+        self.parent?.navigationItem.title = self.className
     }
 }
