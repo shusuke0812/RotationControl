@@ -19,3 +19,4 @@
 
 ## 参考
 - [AppRootControllerのご提案（簡略説明版）](https://speakerdeck.com/yimajo/approotcontrollerfalsegoti-an-jian-lue-shuo-ming-ban?slide=4)
+- [UIViewController / Handling View Rotations - Apple Document](https://developer.apple.com/documentation/uikit/uiviewcontroller?language=objc)
