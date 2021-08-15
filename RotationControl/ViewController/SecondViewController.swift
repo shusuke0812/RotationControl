@@ -31,7 +31,7 @@ class SecondViewController: UIViewController {
 // MARK: - Private
 extension SecondViewController {
     private func configUI() {
-        rootTypeLabel.text = "Root is TabBar"
+        rootTypeLabel.text = "Root is Navigation"
         rootTypeLabel.font = UIFont.systemFont(ofSize: Common.ButtonSize.standard)
         
         rotateDescriptionView.backgroundColor = .systemGreen

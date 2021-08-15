@@ -27,7 +27,7 @@ class ThirdViewController: UIViewController {
 // MARK: - Private
 extension ThirdViewController {
     private func configUI() {
-        rootTypeLabel.text = "Root is TabBar"
+        rootTypeLabel.text = "Root is Navigation"
         rootTypeLabel.font = UIFont.systemFont(ofSize: Common.ButtonSize.standard)
         
         rotateDescriptionView.backgroundColor = .systemPink
