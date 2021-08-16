@@ -9,6 +9,7 @@
 - iPhone: 基本的には縦表示のみ可能、一部のみ横表示可能（図１）
 - iPad: 基本的には縦表示、横表示可能
   
+[UI](README_Image/rotation_ui.png)
 図１：UI構成
 
 ## 開発環境
