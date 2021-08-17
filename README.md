@@ -21,4 +21,5 @@
 
 ## 参考
 - [AppRootControllerのご提案（簡略説明版）](https://speakerdeck.com/yimajo/approotcontrollerfalsegoti-an-jian-lue-shuo-ming-ban?slide=4)
+- [Creating a Custom Container View Controller - Apple Document](https://developer.apple.com/documentation/uikit/view_controllers/creating_a_custom_container_view_controller)
 - [UIViewController / Handling View Rotations - Apple Document](https://developer.apple.com/documentation/uikit/uiviewcontroller?language=objc)
