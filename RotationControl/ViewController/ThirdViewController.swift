@@ -26,17 +26,6 @@ class ThirdViewController: UIViewController {
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .allButUpsideDown
     }
-    
-    // TODO: 下記は暫定、横回転させたあとに 前画面へ戻る or Secondタブをタップする と強制的に縦画面になるようにする
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            if UIDevice.current.orientation.isLandscape {
-                self.parent?.navigationItem.setHidesBackButton(true, animated: false)
-            } else {
-                self.parent?.navigationItem.setHidesBackButton(false, animated: false)
-            }
-        }
-    }
 }
 
 // MARK: - Private

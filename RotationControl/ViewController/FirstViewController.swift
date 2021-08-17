@@ -24,19 +24,16 @@ class FirstViewController: UIViewController {
         configUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
+    }
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .allButUpsideDown
     }
     
-    // TODO: 下記は暫定、横回転させたあとに前画面へ戻ると強制的に縦画面になるようにする
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        if UIDevice.current.userInterfaceIdiom == .phone {
-            if UIDevice.current.orientation.isLandscape {
-                navigationItem.setHidesBackButton(true, animated: false)
-            } else {
-                navigationItem.setHidesBackButton(false, animated: false)
-            }
-        }
+        print("DEBUG: デバイス回転処理 ON")
     }
     
     // MARK: - Action

@@ -24,6 +24,10 @@ class TopViewController: UIViewController {
         configUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
+    }
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIDevice.current.userInterfaceIdiom == .phone ? .portrait : .allButUpsideDown
     }
