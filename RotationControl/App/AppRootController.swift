@@ -7,6 +7,12 @@
 
 /**
  * 参考URL：https://gist.github.com/yoonchulkoh/d0c211ad7c37597213c700bd94d0f1d5
+ *
+ * TODO:
+ * - Login Access Token キャッシュの有無によってページを切り替える処理を入れる
+ * - ユニバーサルリンクのURLをもとにページを切り替える処理を入れる
+ * - SplitViewの設定処理を入れる
+ * - 参考URLのremoveVC処理を入れる？
  */
 
 import UIKit
