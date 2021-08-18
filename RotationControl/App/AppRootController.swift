@@ -24,7 +24,7 @@ class AppRootController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        showMainPage()
+        showTopPage()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -34,7 +34,7 @@ class AppRootController: UIViewController {
 
 // MARK: - Private
 extension AppRootController {
-    func showMainPage() {
+    func showTopPage() {
         let vc = RootNavigationController()
         setCurrentViewController(vc)
     }
