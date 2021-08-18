@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CAE0D2B26CC21F4005AFC3B /* AppRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAE0D2A26CC21F4005AFC3B /* AppRootController.swift */; };
 		9CC41A3D26C9063700E7F479 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC41A3C26C9063700E7F479 /* RootNavigationController.swift */; };
 		9CC41A3F26C907B300E7F479 /* RootNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC41A3E26C907B300E7F479 /* RootNavigationController.storyboard */; };
 		9CC41A4126C932B700E7F479 /* RootTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC41A4026C932B700E7F479 /* RootTabBarController.storyboard */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9CAE0D2A26CC21F4005AFC3B /* AppRootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootController.swift; sourceTree = "<group>"; };
 		9CC41A3C26C9063700E7F479 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
 		9CC41A3E26C907B300E7F479 /* RootNavigationController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootNavigationController.storyboard; sourceTree = "<group>"; };
 		9CC41A4026C932B700E7F479 /* RootTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootTabBarController.storyboard; sourceTree = "<group>"; };
@@ -93,6 +95,16 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		9CAE0D2926CC215B005AFC3B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9CC6BE6D26C6BA7E00C79936 /* AppDelegate.swift */,
+				9CC6BE6F26C6BA7E00C79936 /* SceneDelegate.swift */,
+				9CAE0D2A26CC21F4005AFC3B /* AppRootController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		9CC6BE6126C6BA7E00C79936 = {
 			isa = PBXGroup;
 			children = (
@@ -112,13 +124,12 @@
 		9CC6BE6C26C6BA7E00C79936 /* RotationControl */ = {
 			isa = PBXGroup;
 			children = (
+				9CAE0D2926CC215B005AFC3B /* App */,
 				9CFC107326C81C6800F252BA /* Static */,
 				9CFC106A26C80E7700F252BA /* Utility */,
 				9CFC106526C7F83500F252BA /* View */,
 				9C9FDAF326C7A4580003AE4A /* Storyboard */,
 				9C9FDAF226C7A44F0003AE4A /* ViewController */,
-				9CC6BE6D26C6BA7E00C79936 /* AppDelegate.swift */,
-				9CC6BE6F26C6BA7E00C79936 /* SceneDelegate.swift */,
 				9CC6BE7626C6BA8800C79936 /* Assets.xcassets */,
 				9CC6BE7826C6BA8800C79936 /* LaunchScreen.storyboard */,
 				9CC6BE7B26C6BA8800C79936 /* Info.plist */,
@@ -253,6 +264,7 @@
 				9CC6BE7026C6BA7E00C79936 /* SceneDelegate.swift in Sources */,
 				9CFC106926C7F98000F252BA /* RotateDescriptionView.swift in Sources */,
 				9CFC106C26C80E8800F252BA /* Storyboard.swift in Sources */,
+				9CAE0D2B26CC21F4005AFC3B /* AppRootController.swift in Sources */,
 				9CC41A4326C932F400E7F479 /* RootTabBarController.swift in Sources */,
 				9CFC106226C7B3D700F252BA /* FirstViewController.swift in Sources */,
 				9CC41A4726C9337700E7F479 /* ThirdViewController.swift in Sources */,
