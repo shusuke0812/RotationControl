@@ -35,7 +35,7 @@ class AppRootController: UIViewController {
 // MARK: - Private
 extension AppRootController {
     func showTopPage() {
-        let vc = RootNavigationController()
+        let vc = Storyboard.RootNavigationController.instantiate(RootNavigationController.self)
         setCurrentViewController(vc)
     }
     private func setCurrentViewController(_ vc: UIViewController) {
