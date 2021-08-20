@@ -12,7 +12,6 @@
  * - Login Access Token キャッシュの有無によってページを切り替える処理を入れる
  * - ユニバーサルリンクのURLをもとにページを切り替える処理を入れる
  * - SplitViewの設定処理を入れる
- * - 参考URLのremoveVC処理を入れる？
  */
 
 import UIKit
@@ -36,6 +35,10 @@ class AppRootController: UIViewController {
 extension AppRootController {
     private func showTopPage() {
         let vc = Storyboard.RootNavigationController.instantiate(RootNavigationController.self)
+        changeViewController(vc)
+    }
+    private func changeViewController(_ vc: UIViewController) {
+        removeCurrentViewController()
         setCurrentViewController(vc)
     }
     private func setCurrentViewController(_ vc: UIViewController) {
@@ -43,5 +46,11 @@ extension AppRootController {
         addChild(vc)
         view.addSubview(vc.view)
         didMove(toParent: vc)
+    }
+    private func removeCurrentViewController() {
+        guard let vc = currentViewController else { return }
+        vc.willMove(toParent: nil)
+        vc.view.removeFromSuperview()
+        vc.removeFromParent()
     }
 }
