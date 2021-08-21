@@ -8,6 +8,9 @@
 import UIKit
 
 struct Common {
+    struct LabelSize {
+        static let standard: CGFloat = 20.0
+    }
     struct ButtonTitle {
         static let next = "次に進む"
     }

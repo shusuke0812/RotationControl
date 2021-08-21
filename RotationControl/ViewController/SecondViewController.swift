@@ -38,7 +38,7 @@ class SecondViewController: UIViewController {
 extension SecondViewController {
     private func configUI() {
         rootTypeLabel.text = "Root is Navigation"
-        rootTypeLabel.font = UIFont.systemFont(ofSize: Common.ButtonSize.standard)
+        rootTypeLabel.font = UIFont.systemFont(ofSize: Common.LabelSize.standard)
         
         rotateDescriptionView.backgroundColor = .systemGreen
         rotateDescriptionView.setDescription(descriptionText: RotateDescriptionHelper.setDescription(iphoneRotation: false, ipadRotation: true))

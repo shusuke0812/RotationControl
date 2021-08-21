@@ -32,7 +32,7 @@ class ThirdViewController: UIViewController {
 extension ThirdViewController {
     private func configUI() {
         rootTypeLabel.text = "Root is Navigation"
-        rootTypeLabel.font = UIFont.systemFont(ofSize: Common.ButtonSize.standard)
+        rootTypeLabel.font = UIFont.systemFont(ofSize: Common.LabelSize.standard)
         
         rotateDescriptionView.backgroundColor = .systemPink
         rotateDescriptionView.setDescription(descriptionText: RotateDescriptionHelper.setDescription(iphoneRotation: true, ipadRotation: true))

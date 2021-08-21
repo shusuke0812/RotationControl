@@ -47,7 +47,7 @@ class FirstViewController: UIViewController {
 extension FirstViewController {
     private func configUI() {
         rootTypeLabel.text = "Root is Navigation"
-        rootTypeLabel.font = UIFont.systemFont(ofSize: Common.ButtonSize.standard)
+        rootTypeLabel.font = UIFont.systemFont(ofSize: Common.LabelSize.standard)
         
         rotateDescriptionView.backgroundColor = .systemBlue
         rotateDescriptionView.setDescription(descriptionText: RotateDescriptionHelper.setDescription(iphoneRotation: true, ipadRotation: true))
