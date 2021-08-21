@@ -30,6 +30,13 @@
                                     <constraint firstAttribute="height" constant="130" id="kA4-ba-PN2"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKf-JG-4dl">
+                                <rect key="frame" x="15" y="464" width="384" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="didTappedNextButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="V10-mC-9we"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -38,13 +45,17 @@
                             <constraint firstItem="aAZ-ia-d6N" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="170" id="CjG-eL-o13"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aAZ-ia-d6N" secondAttribute="trailing" constant="15" id="EAR-oV-gmd"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="E5G-eV-ect" secondAttribute="trailing" constant="15" id="UbX-4D-7qz"/>
+                            <constraint firstItem="lKf-JG-4dl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="Uvm-OF-6eg"/>
                             <constraint firstItem="E5G-eV-ect" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="V8e-DU-MR1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lKf-JG-4dl" secondAttribute="trailing" constant="15" id="Wgk-y1-mWF"/>
                             <constraint firstItem="E5G-eV-ect" firstAttribute="top" secondItem="aAZ-ia-d6N" secondAttribute="bottom" constant="60" id="ttq-cs-fw9"/>
+                            <constraint firstItem="lKf-JG-4dl" firstAttribute="top" secondItem="E5G-eV-ect" secondAttribute="bottom" constant="60" id="vof-n4-FQh"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="person.circle" catalog="system" id="3eS-e6-vBP"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="nextButton" destination="lKf-JG-4dl" id="BOU-FY-dHX"/>
                         <outlet property="rootTypeLabel" destination="aAZ-ia-d6N" id="LBg-u0-RPF"/>
                         <outlet property="rotateDescriptionView" destination="E5G-eV-ect" id="dLP-Up-gOL"/>
                     </connections>

@@ -15,6 +15,7 @@ enum Storyboard: String {
     case RootTabBarController
     case SecondViewController
     case ThirdViewController
+    case FourthViewController
     
     /// StoryboardからViewControllerインスタンス化する
     func instantiate<VC: UIViewController>(_: VC.Type, inBundle bundle: Bundle? = nil) -> VC {

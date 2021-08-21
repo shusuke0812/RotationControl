@@ -16,6 +16,7 @@ class SecondViewController: UIViewController {
     
     @IBOutlet private weak var rootTypeLabel: UILabel!
     @IBOutlet private weak var rotateDescriptionView: RotateDescriptionView!
+    @IBOutlet weak var nextButton: UIButton!
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -25,6 +26,11 @@ class SecondViewController: UIViewController {
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIDevice.current.userInterfaceIdiom == .phone ? .portrait : .allButUpsideDown
+    }
+    
+    // MARK: - Action
+    @IBAction func didTappedNextButton(_ sender: Any) {
+        transitionFourthPage()
     }
 }
 
@@ -37,6 +43,14 @@ extension SecondViewController {
         rotateDescriptionView.backgroundColor = .systemGreen
         rotateDescriptionView.setDescription(descriptionText: RotateDescriptionHelper.setDescription(iphoneRotation: false, ipadRotation: true))
         
+        nextButton.setTitle(Common.ButtonTitle.next, for: .normal)
+        nextButton.titleLabel?.font = UIFont.systemFont(ofSize: Common.ButtonSize.standard)
+        
         self.parent?.navigationItem.title = self.className
+    }
+    private func transitionFourthPage() {
+        let vc = Storyboard.FourthViewController.instantiate(FourthViewController.self, inBundle: nil)
+        let navVC = RootNavigationController(rootViewController: vc)
+        present(navVC, animated: true, completion: nil)
     }
 }
