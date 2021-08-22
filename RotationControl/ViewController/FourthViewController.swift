@@ -14,6 +14,7 @@ import UIKit
  */
 class FourthViewController: UIViewController {
     
+    @IBOutlet weak var orientationAlertLabel: UILabel!
     @IBOutlet weak var rootTypeLabel: UILabel!
     @IBOutlet weak var rotateDescriptionView: RotateDescriptionView!
     
@@ -30,8 +31,10 @@ class FourthViewController: UIViewController {
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         if UIDevice.current.orientation != .portrait {
             hideCloseButton(true)
+            orientationAlertLabel.isHidden = false
         } else {
             hideCloseButton(false)
+            orientationAlertLabel.isHidden = true
         }
     }
     
@@ -44,6 +47,11 @@ class FourthViewController: UIViewController {
 // MARK: - Private
 extension FourthViewController {
     private func configUI() {
+        orientationAlertLabel.text = "縦表示にしないと画面を閉じれませんよ😭"
+        orientationAlertLabel.font = UIFont.systemFont(ofSize: Common.LabelSize.standard, weight: .bold)
+        orientationAlertLabel.textColor = .systemRed
+        orientationAlertLabel.isHidden = true
+        
         rootTypeLabel.text = "Root is Navigation"
         rootTypeLabel.font = UIFont.systemFont(ofSize: Common.LabelSize.standard)
         
