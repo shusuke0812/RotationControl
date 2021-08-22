@@ -38,7 +38,7 @@ class FirstViewController: UIViewController {
     }
     
     // MARK: - Action
-    @IBAction func didTappedNextButton(_ sender: Any) {
+    @IBAction private func didTappedNextButton(_ sender: Any) {
         transitionSecondPage()
     }
 }

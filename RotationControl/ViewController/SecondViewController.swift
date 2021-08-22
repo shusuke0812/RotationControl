@@ -29,7 +29,7 @@ class SecondViewController: UIViewController {
     }
     
     // MARK: - Action
-    @IBAction func didTappedNextButton(_ sender: Any) {
+    @IBAction private func didTappedNextButton(_ sender: Any) {
         transitionFourthPage()
     }
 }

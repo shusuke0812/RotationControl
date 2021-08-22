@@ -14,9 +14,9 @@ import UIKit
  */
 class FourthViewController: UIViewController {
     
-    @IBOutlet weak var orientationAlertLabel: UILabel!
-    @IBOutlet weak var rootTypeLabel: UILabel!
-    @IBOutlet weak var rotateDescriptionView: RotateDescriptionView!
+    @IBOutlet private weak var orientationAlertLabel: UILabel!
+    @IBOutlet private weak var rootTypeLabel: UILabel!
+    @IBOutlet private weak var rotateDescriptionView: RotateDescriptionView!
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -39,7 +39,7 @@ class FourthViewController: UIViewController {
     }
     
     // MARK: - Action
-    @objc func didTappedCloseButton(_ sender: UIBarButtonItem) {
+    @objc private func didTappedCloseButton(_ sender: UIBarButtonItem) {
         presentingViewController?.dismiss(animated: true, completion: nil)
     }
 }
