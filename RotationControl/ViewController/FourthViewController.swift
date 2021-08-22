@@ -7,14 +7,37 @@
 
 import UIKit
 
+/**
+ * ４番目の画面
+ * - iPhone : 縦表示のみ
+ * - iPad : 縦表示・横表示
+ */
 class FourthViewController: UIViewController {
     
     @IBOutlet weak var rootTypeLabel: UILabel!
     @IBOutlet weak var rotateDescriptionView: RotateDescriptionView!
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .allButUpsideDown
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        if UIDevice.current.orientation != .portrait {
+            hideCloseButton(true)
+        } else {
+            hideCloseButton(false)
+        }
+    }
+    
+    // MARK: - Action
+    @objc func didTappedCloseButton(_ sender: UIBarButtonItem) {
+        presentingViewController?.dismiss(animated: true, completion: nil)
     }
 }
 
@@ -27,6 +50,10 @@ extension FourthViewController {
         rotateDescriptionView.backgroundColor = .systemTeal
         rotateDescriptionView.setDescription(descriptionText: RotateDescriptionHelper.setDescription(iphoneRotation: true, ipadRotation: true))
         
-        self.navigationItem.title = self.className
+        navigationItem.title = self.className
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(didTappedCloseButton))
+    }
+    private func hideCloseButton(_ isHidden: Bool) {
+        navigationItem.rightBarButtonItem = isHidden ? nil : UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(didTappedCloseButton))
     }
 }

@@ -51,6 +51,7 @@ extension SecondViewController {
     private func transitionFourthPage() {
         let vc = Storyboard.FourthViewController.instantiate(FourthViewController.self, inBundle: nil)
         let navVC = RootNavigationController(rootViewController: vc)
+        navVC.modalPresentationStyle = .fullScreen
         present(navVC, animated: true, completion: nil)
     }
 }
