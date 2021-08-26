@@ -24,6 +24,11 @@ class SecondViewController: UIViewController {
         configUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.parent?.navigationItem.title = self.className
+    }
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIDevice.current.userInterfaceIdiom == .phone ? .portrait : .allButUpsideDown
     }
@@ -45,8 +50,6 @@ extension SecondViewController {
         
         nextButton.setTitle(Common.ButtonTitle.next, for: .normal)
         nextButton.titleLabel?.font = UIFont.systemFont(ofSize: Common.ButtonSize.standard)
-        
-        self.parent?.navigationItem.title = self.className
     }
     private func transitionFourthPage() {
         let vc = Storyboard.FourthViewController.instantiate(FourthViewController.self, inBundle: nil)

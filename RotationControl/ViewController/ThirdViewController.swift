@@ -23,6 +23,11 @@ class ThirdViewController: UIViewController {
         configUI()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.parent?.navigationItem.title = self.className
+    }
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .allButUpsideDown
     }
@@ -36,7 +41,5 @@ extension ThirdViewController {
         
         rotateDescriptionView.backgroundColor = .systemPink
         rotateDescriptionView.setDescription(descriptionText: RotateDescriptionHelper.setDescription(iphoneRotation: true, ipadRotation: true))
-        
-        self.parent?.navigationItem.title = self.className
     }
 }
