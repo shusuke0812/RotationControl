@@ -29,6 +29,11 @@ class SecondViewController: UIViewController {
         self.parent?.navigationItem.title = self.className
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
+    }
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIDevice.current.userInterfaceIdiom == .phone ? .portrait : .allButUpsideDown
     }
