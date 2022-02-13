@@ -9,6 +9,8 @@
 - UI
   - iPhone: 基本的には縦表示のみ可能、一部のみ横表示可能（図１）
   - iPad: 基本的には縦表示、横表示可能
+- 注意
+  - ホームボタンのない端末はUpSideDownが効かない（[参考](https://zenn.dev/st43/articles/4ca655b90f590f)）
 
 |![UI](README_Image/rotation_ui.png)|  
 |:-:|
