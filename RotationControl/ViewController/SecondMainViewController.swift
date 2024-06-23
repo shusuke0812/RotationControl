@@ -12,7 +12,7 @@ import UIKit
  * - iPhone : 縦表示のみ
  * - iPad : 縦表示・横表示
  */
-class SecondViewController: UIViewController {
+class SecondMainViewController: UIViewController {
     
     @IBOutlet private weak var rootTypeLabel: UILabel!
     @IBOutlet private weak var rotateDescriptionView: RotateDescriptionView!
@@ -45,7 +45,7 @@ class SecondViewController: UIViewController {
 }
 
 // MARK: - Private
-extension SecondViewController {
+extension SecondMainViewController {
     private func configUI() {
         rootTypeLabel.text = "Root is Navigation"
         rootTypeLabel.font = UIFont.systemFont(ofSize: Common.LabelSize.standard)
