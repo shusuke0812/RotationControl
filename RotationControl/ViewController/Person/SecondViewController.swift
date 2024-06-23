@@ -12,10 +12,10 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        showMainSecondView()
+        showSecondMainView()
     }
     
-    private func showMainSecondView() {
+    private func showSecondMainView() {
         view.subviews.forEach { $0.removeFromSuperview() }
         let s = UIStoryboard(name: "SecondMainViewController", bundle: nil)
         let vc = s.instantiateInitialViewController() as! SecondMainViewController
