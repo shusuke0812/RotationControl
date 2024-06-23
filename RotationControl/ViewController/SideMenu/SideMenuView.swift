@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SideMenuView: View {
     @State var isOpen: Bool
+    var onTapBackground: (() -> Void)?
     private let maxWidth = UIScreen.main.bounds.width
 
     var body: some View {
@@ -16,7 +17,11 @@ struct SideMenuView: View {
             Color.black
                 .ignoresSafeArea(.all)
                 .opacity(isOpen ? 0.1 : 0.0)
-                .animation(.easeIn, value: 0.25)
+                .onTapGesture {
+                    withAnimation(.easeInOut(duration: 0.3)) {
+                        onTapBackground?()
+                    }
+                }
             ZStack {
                 List {
                     Section {
