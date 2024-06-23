@@ -15,7 +15,7 @@ struct SideMenuView: View {
         ZStack {
             Color.black
                 .ignoresSafeArea(.all)
-                .opacity(isOpen ? 1.0 : 0.0)
+                .opacity(isOpen ? 0.1 : 0.0)
                 .animation(.easeIn, value: 0.25)
             ZStack {
                 List {
