@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Second-->
+        <!--Second Main View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="SecondMainViewController" customModule="RotationControl" customModuleProvider="target" sceneMemberID="viewController">
@@ -52,7 +52,6 @@
                             <constraint firstItem="lKf-JG-4dl" firstAttribute="top" secondItem="E5G-eV-ect" secondAttribute="bottom" constant="60" id="vof-n4-FQh"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="person.circle" catalog="system" id="3eS-e6-vBP"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="nextButton" destination="lKf-JG-4dl" id="BOU-FY-dHX"/>
@@ -62,11 +61,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="42" y="119"/>
+            <point key="canvasLocation" x="-300" y="119"/>
         </scene>
     </scenes>
     <resources>
-        <image name="person.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
