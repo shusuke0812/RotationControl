@@ -14,6 +14,8 @@ enum Storyboard: String {
     case FirstViewController
     case RootTabBarController
     case SecondViewController
+    case SecondMainViewController
+    case SecondSubViewController
     case ThirdViewController
     case FourthViewController
     

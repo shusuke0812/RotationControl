@@ -44,27 +44,16 @@ class SecondViewController: UIViewController {
     }
     
     private func showSecondMainView() {
-        view.subviews.forEach { $0.removeFromSuperview() }
-        let s = UIStoryboard(name: "SecondMainViewController", bundle: nil)
-        let vc = s.instantiateInitialViewController() as! SecondMainViewController
-        addChild(vc)
-        
-        vc.view.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(vc.view)
-        vc.didMove(toParent: self)
-        
-        NSLayoutConstraint.activate([
-            vc.view.topAnchor.constraint(equalTo: view.topAnchor),
-            vc.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            vc.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            vc.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
+        showContainerView(SecondMainViewController.self, storyboard: .SecondMainViewController)
     }
     
     private func showSecondSubView() {
+        showContainerView(SecondSubViewController.self, storyboard: .SecondSubViewController)
+    }
+    
+    private func showContainerView<VC: UIViewController>(_: VC.Type, storyboard: Storyboard) {
         view.subviews.forEach { $0.removeFromSuperview() }
-        let s = UIStoryboard(name: "SecondSubViewController", bundle: nil)
-        let vc = s.instantiateInitialViewController() as! SecondSubViewController
+        let vc = storyboard.instantiate(VC.self)
         addChild(vc)
         
         vc.view.translatesAutoresizingMaskIntoConstraints = false
