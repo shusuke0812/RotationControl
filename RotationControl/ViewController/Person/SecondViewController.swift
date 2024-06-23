@@ -78,8 +78,4 @@ class SecondViewController: UIViewController {
             vc.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
-    
-    @objc
-    private func onSwitch(_ sender: UIBarButtonItem) {
-    }
 }
