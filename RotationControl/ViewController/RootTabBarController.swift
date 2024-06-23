@@ -25,7 +25,14 @@ class RootTabBarController: UITabBarController {
             target: self,
             action: #selector(onTappedMenu(_:))
         )
+        let switchButtonItem = UIBarButtonItem(
+            image: UIImage(systemName: "square.split.2x2.fill"),
+            style: .plain,
+            target: self,
+            action: #selector(onSwitch(_:))
+        )
         navigationItem.leftBarButtonItem = menuButtonItem
+        navigationItem.rightBarButtonItem = switchButtonItem
         
         sideMenuView = SideMenuView(isOpen: true)
         sideMenuView.onTapBackground = { [weak self] in
@@ -40,6 +47,7 @@ class RootTabBarController: UITabBarController {
         return vc.supportedInterfaceOrientations
     }
     
+    // MARK: - Side Menu
     @objc
     private func onTappedMenu(_ sender: UIBarButtonItem) {
         showSideMenu()
@@ -55,5 +63,10 @@ class RootTabBarController: UITabBarController {
     
     private func closeSideMenu() {
         dismiss(animated: true)
+    }
+    
+    // MARK: - Switch
+    @objc
+    private func onSwitch(_ sender: UIBarButtonItem) {
     }
 }
