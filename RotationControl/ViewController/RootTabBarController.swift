@@ -15,6 +15,14 @@ class RootTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
+        
+        let menuButtonItem = UIBarButtonItem(
+            image: UIImage(systemName: "line.3.horizontal"),
+            style: .plain,
+            target: self,
+            action: #selector(showSideMenu(_:))
+        )
+        navigationItem.leftBarButtonItem = menuButtonItem
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
@@ -22,5 +30,10 @@ class RootTabBarController: UITabBarController {
             return .allButUpsideDown
         }
         return vc.supportedInterfaceOrientations
+    }
+    
+    @objc
+    private func showSideMenu(_ sender: UIBarButtonItem) {
+        
     }
 }
