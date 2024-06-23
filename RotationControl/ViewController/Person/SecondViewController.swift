@@ -15,6 +15,20 @@ class SecondViewController: UIViewController {
         showSecondMainView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        parent?.navigationItem.title = self.className
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIDevice.current.userInterfaceIdiom == .phone ? .portrait : .allButUpsideDown
+    }
+    
     private func showSecondMainView() {
         view.subviews.forEach { $0.removeFromSuperview() }
         let s = UIStoryboard(name: "SecondMainViewController", bundle: nil)
@@ -31,5 +45,9 @@ class SecondViewController: UIViewController {
             vc.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             vc.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
+    }
+    
+    @objc
+    private func onSwitch(_ sender: UIBarButtonItem) {
     }
 }

@@ -24,20 +24,6 @@ class SecondMainViewController: UIViewController {
         configUI()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.parent?.navigationItem.title = self.className
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
-    }
-    
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return UIDevice.current.userInterfaceIdiom == .phone ? .portrait : .allButUpsideDown
-    }
-    
     // MARK: - Action
     @IBAction private func didTappedNextButton(_ sender: Any) {
         transitionFourthPage()
