@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct SideMenuView: View {
+    @State var isOpen: Bool
     private let maxWidth = UIScreen.main.bounds.width
 
     var body: some View {
         ZStack {
             Color.black
                 .ignoresSafeArea(.all)
-                .opacity(0.1)
+                .opacity(isOpen ? 1.0 : 0.0)
+                .animation(.easeIn, value: 0.25)
             ZStack {
                 List {
                     Section {
@@ -37,11 +39,12 @@ struct SideMenuView: View {
                 .padding()
             }
             .padding(.trailing, maxWidth / 4)
-            .offset(x: 0)
+            .offset(x: isOpen ? 0 : -maxWidth)
+            .animation(.easeIn, value: 0.25)
         }
     }
 }
 
 #Preview {
-    SideMenuView()
+    SideMenuView(isOpen: true)
 }
