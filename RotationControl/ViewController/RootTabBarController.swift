@@ -12,6 +12,8 @@ import SwiftUI
  * 回転制御元のRoot ViewController `TabBar `
  */
 class RootTabBarController: UITabBarController {
+    var onTapSwitch: (() -> Void)?
+
     private var sideMenuView: SideMenuView!
 
     override func viewDidLoad() {
@@ -68,5 +70,6 @@ class RootTabBarController: UITabBarController {
     // MARK: - Switch
     @objc
     private func onSwitch(_ sender: UIBarButtonItem) {
+        onTapSwitch?()
     }
 }
