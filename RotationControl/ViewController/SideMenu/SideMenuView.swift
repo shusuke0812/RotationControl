@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SideMenuView: View {
-    @Binding var isOpen: Bool
+    @State var isOpen: Bool
     
     private let maxWidth = UIScreen.main.bounds.width
 
@@ -53,7 +53,7 @@ struct SideMenuView: View {
     struct PreviewView: View {
         @State var isOpen = true
         var body: some View {
-            SideMenuView(isOpen: $isOpen)
+            SideMenuView(isOpen: isOpen)
         }
     }
     return PreviewView()
