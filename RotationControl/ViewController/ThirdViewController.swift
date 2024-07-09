@@ -32,6 +32,11 @@ class ThirdViewController: UIViewController {
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .allButUpsideDown
     }
+    
+    // MARK: - Action
+    @IBAction private func didTappedChangeTabButton(_ sender: UIButton) {
+        tabBarController?.selectedIndex = 0
+    }
 }
 
 // MARK: - Private
