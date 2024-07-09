@@ -16,6 +16,7 @@ class ThirdViewController: UIViewController {
 
     @IBOutlet private weak var rootTypeLabel: UILabel!
     @IBOutlet private weak var rotateDescriptionView: RotateDescriptionView!
+    @IBOutlet private weak var changeTabButton: UIButton!
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -41,5 +42,8 @@ extension ThirdViewController {
         
         rotateDescriptionView.backgroundColor = .systemPink
         rotateDescriptionView.setDescription(descriptionText: RotateDescriptionHelper.setDescription(iphoneRotation: true, ipadRotation: true))
+        
+        changeTabButton.setTitle("Secondへ戻る", for: .normal)
+        changeTabButton.titleLabel?.font = UIFont.systemFont(ofSize: Common.ButtonSize.standard)
     }
 }

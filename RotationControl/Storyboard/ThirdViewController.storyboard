@@ -36,6 +36,11 @@
                                                     <constraint firstAttribute="height" constant="130" id="Ptx-xX-4Hp"/>
                                                 </constraints>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yy1-95-Ltl">
+                                                <rect key="frame" x="169.5" y="420" width="75" height="35"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -43,6 +48,8 @@
                                             <constraint firstItem="cA6-Jn-zym" firstAttribute="leading" secondItem="0gl-hW-Eix" secondAttribute="leading" constant="15" id="E01-C7-9cG"/>
                                             <constraint firstAttribute="trailing" secondItem="wpv-vO-Ahd" secondAttribute="trailing" constant="15" id="FL6-zQ-1lF"/>
                                             <constraint firstAttribute="height" constant="1000" id="UZl-yb-INK"/>
+                                            <constraint firstItem="Yy1-95-Ltl" firstAttribute="centerX" secondItem="0gl-hW-Eix" secondAttribute="centerX" id="eHq-hD-tB2"/>
+                                            <constraint firstItem="Yy1-95-Ltl" firstAttribute="top" secondItem="wpv-vO-Ahd" secondAttribute="bottom" constant="60" id="rXp-6n-lJg"/>
                                             <constraint firstItem="wpv-vO-Ahd" firstAttribute="top" secondItem="cA6-Jn-zym" secondAttribute="bottom" constant="60" id="sas-wM-1fo"/>
                                             <constraint firstItem="cA6-Jn-zym" firstAttribute="top" secondItem="0gl-hW-Eix" secondAttribute="top" constant="170" id="wS6-Hr-O73"/>
                                             <constraint firstItem="wpv-vO-Ahd" firstAttribute="leading" secondItem="0gl-hW-Eix" secondAttribute="leading" constant="15" id="x7g-hv-cea"/>
@@ -72,6 +79,7 @@
                     <tabBarItem key="tabBarItem" title="Third" image="gearshape" catalog="system" id="Zay-ay-83r"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="changeTabButton" destination="Yy1-95-Ltl" id="vKD-a7-oeK"/>
                         <outlet property="rootTypeLabel" destination="cA6-Jn-zym" id="WK3-f0-suj"/>
                         <outlet property="rotateDescriptionView" destination="wpv-vO-Ahd" id="cA7-Id-xQT"/>
                     </connections>
