@@ -29,7 +29,7 @@ class SecondMainViewController: UIViewController {
     @IBAction private func didTappedNextButton(_ sender: Any) {
         transitionFourthPage()
     }
-    @IBAction private func didTappedDisabledThirdTabButton(_ sender: Any) {
+    @IBAction private func didTappedDisabledThirdTabButton(_ sender: UIButton) {
     }
 }
 
