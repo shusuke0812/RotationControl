@@ -16,7 +16,7 @@ class SecondMainViewController: UIViewController {
     
     @IBOutlet private weak var rootTypeLabel: UILabel!
     @IBOutlet private weak var rotateDescriptionView: RotateDescriptionView!
-    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet private weak var nextButton: UIButton!
     @IBOutlet private weak var disabledThirdTabButton: UIButton!
     
     // MARK: - Lifecycle
