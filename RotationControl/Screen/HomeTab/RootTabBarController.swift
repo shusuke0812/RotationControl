@@ -34,7 +34,7 @@ class RootTabBarController: UITabBarController {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
         
-        // Navigation
+        // Tab bar items
         let menuButtonItem = UIBarButtonItem(
             image: UIImage(systemName: "line.3.horizontal"),
             style: .plain,
@@ -47,6 +47,8 @@ class RootTabBarController: UITabBarController {
             target: self,
             action: #selector(onSwitch(_:))
         )
+        
+        // Navigation items
         navigationItem.leftBarButtonItem = menuButtonItem
         navigationItem.rightBarButtonItem = switchButtonItem
         
