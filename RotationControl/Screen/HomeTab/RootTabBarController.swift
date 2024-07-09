@@ -8,6 +8,20 @@
 import UIKit
 import SwiftUI
 
+enum HomeTabController: Int, CaseIterable {
+    case second = 0
+    case third = 1
+    
+    var viewController: UIViewController {
+        switch self {
+        case .second:
+            return Storyboard.SecondViewController.instantiate(SecondViewController.self, inBundle: nil)
+        case .third:
+            return Storyboard.ThirdViewController.instantiate(ThirdViewController.self, inBundle: nil)
+        }
+    }
+}
+
 /**
  * 回転制御元のRoot ViewController `TabBar `
  */
@@ -40,6 +54,10 @@ class RootTabBarController: UITabBarController {
         sideMenuView.onTapBackground = { [weak self] in
             self?.closeSideMenu()
         }
+        
+        // Tab bar controllers
+        let vcs = Array(0 ..< HomeTabController.allCases.count).map { HomeTabController(rawValue: $0)!.viewController }
+        viewControllers = vcs
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
