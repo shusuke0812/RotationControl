@@ -35,7 +35,7 @@ class ThirdViewController: UIViewController {
     
     // MARK: - Action
     @IBAction private func didTappedChangeTabButton(_ sender: UIButton) {
-        tabBarController?.selectedIndex = 0
+        tabBarController?.selectedIndex = HomeTabController.second.rawValue
     }
 }
 
