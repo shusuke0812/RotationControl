@@ -19,6 +19,8 @@ class SecondMainViewController: UIViewController {
     @IBOutlet private weak var nextButton: UIButton!
     @IBOutlet private weak var disabledThirdTabButton: UIButton!
     
+    private var isEnabledThirdTab = true
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +32,8 @@ class SecondMainViewController: UIViewController {
         transitionFourthPage()
     }
     @IBAction private func didTappedDisabledThirdTabButton(_ sender: UIButton) {
+        isEnabledThirdTab.toggle()
+        tabBarController?.tabBar.items?[HomeTabController.third.rawValue].isEnabled = isEnabledThirdTab
     }
 }
 
