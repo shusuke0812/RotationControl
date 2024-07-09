@@ -37,6 +37,14 @@
                                     <action selector="didTappedNextButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="V10-mC-9we"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Cf-IL-fFh">
+                                <rect key="frame" x="169.5" y="558" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="didTappedDisabledThirdTabButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Q14-tE-L6o"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -44,16 +52,19 @@
                             <constraint firstItem="aAZ-ia-d6N" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="1eX-Qg-ZrH"/>
                             <constraint firstItem="aAZ-ia-d6N" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="170" id="CjG-eL-o13"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aAZ-ia-d6N" secondAttribute="trailing" constant="15" id="EAR-oV-gmd"/>
+                            <constraint firstItem="7Cf-IL-fFh" firstAttribute="top" secondItem="lKf-JG-4dl" secondAttribute="bottom" constant="60" id="FNQ-q2-JPu"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="E5G-eV-ect" secondAttribute="trailing" constant="15" id="UbX-4D-7qz"/>
                             <constraint firstItem="lKf-JG-4dl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="Uvm-OF-6eg"/>
                             <constraint firstItem="E5G-eV-ect" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="V8e-DU-MR1"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lKf-JG-4dl" secondAttribute="trailing" constant="15" id="Wgk-y1-mWF"/>
+                            <constraint firstItem="7Cf-IL-fFh" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="bmY-H4-SQX"/>
                             <constraint firstItem="E5G-eV-ect" firstAttribute="top" secondItem="aAZ-ia-d6N" secondAttribute="bottom" constant="60" id="ttq-cs-fw9"/>
                             <constraint firstItem="lKf-JG-4dl" firstAttribute="top" secondItem="E5G-eV-ect" secondAttribute="bottom" constant="60" id="vof-n4-FQh"/>
                         </constraints>
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="disabledThirdTabButton" destination="7Cf-IL-fFh" id="aJe-97-Hu6"/>
                         <outlet property="nextButton" destination="lKf-JG-4dl" id="BOU-FY-dHX"/>
                         <outlet property="rootTypeLabel" destination="aAZ-ia-d6N" id="LBg-u0-RPF"/>
                         <outlet property="rotateDescriptionView" destination="E5G-eV-ect" id="dLP-Up-gOL"/>

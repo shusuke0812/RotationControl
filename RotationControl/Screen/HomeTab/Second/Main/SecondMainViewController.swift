@@ -17,6 +17,7 @@ class SecondMainViewController: UIViewController {
     @IBOutlet private weak var rootTypeLabel: UILabel!
     @IBOutlet private weak var rotateDescriptionView: RotateDescriptionView!
     @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet private weak var disabledThirdTabButton: UIButton!
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -27,6 +28,8 @@ class SecondMainViewController: UIViewController {
     // MARK: - Action
     @IBAction private func didTappedNextButton(_ sender: Any) {
         transitionFourthPage()
+    }
+    @IBAction private func didTappedDisabledThirdTabButton(_ sender: Any) {
     }
 }
 
@@ -41,6 +44,9 @@ extension SecondMainViewController {
         
         nextButton.setTitle(Common.ButtonTitle.next, for: .normal)
         nextButton.titleLabel?.font = UIFont.systemFont(ofSize: Common.ButtonSize.standard)
+        
+        disabledThirdTabButton.setTitle("Thirdタブを無効化", for: .normal)
+        disabledThirdTabButton.titleLabel?.font = UIFont.systemFont(ofSize: Common.ButtonSize.standard)
     }
     private func transitionFourthPage() {
         let vc = Storyboard.FourthViewController.instantiate(FourthViewController.self, inBundle: nil)
