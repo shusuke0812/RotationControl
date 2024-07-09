@@ -83,33 +83,103 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9C9FDAF226C7A44F0003AE4A /* ViewController */ = {
+		9C2BBA8D2C3D8A4900B3BE7D /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				9CC6BE7826C6BA8800C79936 /* LaunchScreen.storyboard */,
+				9C2BBA902C3D8AB200B3BE7D /* Root */,
+				9C2BBA8E2C3D8A7500B3BE7D /* Top */,
+				9C2BBA8F2C3D8A8B00B3BE7D /* First */,
+				9C2BBA912C3D8AC000B3BE7D /* HomeTab */,
+				9C2BBA972C3D8BAB00B3BE7D /* Fourth */,
 				9CC158722C280CC700ECB96C /* SideMenu */,
-				9CC158792C2869B000ECB96C /* Person */,
-				9CC41A3C26C9063700E7F479 /* RootNavigationController.swift */,
-				9CC6BE7126C6BA7E00C79936 /* TopViewController.swift */,
-				9CFC106126C7B3D700F252BA /* FirstViewController.swift */,
-				9CC41A4226C932F400E7F479 /* RootTabBarController.swift */,
-				9CC41A4626C9337700E7F479 /* ThirdViewController.swift */,
-				9CB6E99A26D0C81C00E9EE9D /* FourthViewController.swift */,
 			);
-			path = ViewController;
+			path = Screen;
 			sourceTree = "<group>";
 		};
-		9C9FDAF326C7A4580003AE4A /* Storyboard */ = {
+		9C2BBA8E2C3D8A7500B3BE7D /* Top */ = {
 			isa = PBXGroup;
 			children = (
-				9CC1587A2C2869E100ECB96C /* Person */,
-				9CC41A3E26C907B300E7F479 /* RootNavigationController.storyboard */,
 				9CC6BE7326C6BA7E00C79936 /* TopViewController.storyboard */,
+				9CC6BE7126C6BA7E00C79936 /* TopViewController.swift */,
+			);
+			path = Top;
+			sourceTree = "<group>";
+		};
+		9C2BBA8F2C3D8A8B00B3BE7D /* First */ = {
+			isa = PBXGroup;
+			children = (
 				9CFC106326C7B44300F252BA /* FirstViewController.storyboard */,
+				9CFC106126C7B3D700F252BA /* FirstViewController.swift */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		9C2BBA902C3D8AB200B3BE7D /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				9CC41A3C26C9063700E7F479 /* RootNavigationController.swift */,
+				9CC41A3E26C907B300E7F479 /* RootNavigationController.storyboard */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		9C2BBA912C3D8AC000B3BE7D /* HomeTab */ = {
+			isa = PBXGroup;
+			children = (
 				9CC41A4026C932B700E7F479 /* RootTabBarController.storyboard */,
+				9CC41A4226C932F400E7F479 /* RootTabBarController.swift */,
+				9C2BBA922C3D8ADB00B3BE7D /* Second */,
+				9C2BBA962C3D8B5200B3BE7D /* Third */,
+			);
+			path = HomeTab;
+			sourceTree = "<group>";
+		};
+		9C2BBA922C3D8ADB00B3BE7D /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				9C2BBA932C3D8B1F00B3BE7D /* Main */,
+				9C2BBA952C3D8B2E00B3BE7D /* Sub */,
+				9CC158772C28674C00ECB96C /* SecondViewController.swift */,
+				9CC158752C28673000ECB96C /* SecondViewController.storyboard */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		9C2BBA932C3D8B1F00B3BE7D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9CC41A4426C9332C00E7F479 /* SecondMainViewController.swift */,
+				9CC41A4826C9339100E7F479 /* SecondMainViewController.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9C2BBA952C3D8B2E00B3BE7D /* Sub */ = {
+			isa = PBXGroup;
+			children = (
+				9CC1587D2C2877E300ECB96C /* SecondSubViewController.swift */,
+				9CC1587B2C2877CE00ECB96C /* SecondSubViewController.storyboard */,
+			);
+			path = Sub;
+			sourceTree = "<group>";
+		};
+		9C2BBA962C3D8B5200B3BE7D /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				9CC41A4626C9337700E7F479 /* ThirdViewController.swift */,
 				9CC41A4A26C933AE00E7F479 /* ThirdViewController.storyboard */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		9C2BBA972C3D8BAB00B3BE7D /* Fourth */ = {
+			isa = PBXGroup;
+			children = (
+				9CB6E99A26D0C81C00E9EE9D /* FourthViewController.swift */,
 				9CB6E99C26D0C86000E9EE9D /* FourthViewController.storyboard */,
 			);
-			path = Storyboard;
+			path = Fourth;
 			sourceTree = "<group>";
 		};
 		9CAE0D2926CC215B005AFC3B /* App */ = {
@@ -128,26 +198,6 @@
 				9CC158732C2815A900ECB96C /* SideMenuView.swift */,
 			);
 			path = SideMenu;
-			sourceTree = "<group>";
-		};
-		9CC158792C2869B000ECB96C /* Person */ = {
-			isa = PBXGroup;
-			children = (
-				9CC158772C28674C00ECB96C /* SecondViewController.swift */,
-				9CC41A4426C9332C00E7F479 /* SecondMainViewController.swift */,
-				9CC1587D2C2877E300ECB96C /* SecondSubViewController.swift */,
-			);
-			path = Person;
-			sourceTree = "<group>";
-		};
-		9CC1587A2C2869E100ECB96C /* Person */ = {
-			isa = PBXGroup;
-			children = (
-				9CC158752C28673000ECB96C /* SecondViewController.storyboard */,
-				9CC41A4826C9339100E7F479 /* SecondMainViewController.storyboard */,
-				9CC1587B2C2877CE00ECB96C /* SecondSubViewController.storyboard */,
-			);
-			path = Person;
 			sourceTree = "<group>";
 		};
 		9CC6BE6126C6BA7E00C79936 = {
@@ -173,10 +223,8 @@
 				9CFC107326C81C6800F252BA /* Static */,
 				9CFC106A26C80E7700F252BA /* Utility */,
 				9CFC106526C7F83500F252BA /* View */,
-				9C9FDAF326C7A4580003AE4A /* Storyboard */,
-				9C9FDAF226C7A44F0003AE4A /* ViewController */,
+				9C2BBA8D2C3D8A4900B3BE7D /* Screen */,
 				9CC6BE7626C6BA8800C79936 /* Assets.xcassets */,
-				9CC6BE7826C6BA8800C79936 /* LaunchScreen.storyboard */,
 				9CC6BE7B26C6BA8800C79936 /* Info.plist */,
 			);
 			path = RotationControl;
